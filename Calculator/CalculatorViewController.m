@@ -11,7 +11,7 @@
 
 @interface CalculatorViewController()
 @property (nonatomic) BOOL userIsInTheMiddleOfEnteringANumber;
-@property (nonatomic, strong) CalculatorBrain *brain;
+@property (nonatomic, strong) CalculatorBrain *brain ;
 @end
 
 @implementation CalculatorViewController
