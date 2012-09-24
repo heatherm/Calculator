@@ -11,5 +11,8 @@
 @interface CalculatorViewController : UIViewController
 
 @property (weak, nonatomic) IBOutlet UILabel *display;
+@property (nonatomic) BOOL userIsInTheMiddleOfEnteringANumber;
+
+- (IBAction)digitPressed:(UIButton *)sender;
 
 @end

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		032190DB160FE6D20045F85D /* libKiwi.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 032190DA160FE6D20045F85D /* libKiwi.a */; };
+		032190E11610016F0045F85D /* CalculatorViewControllerSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 032190E01610016F0045F85D /* CalculatorViewControllerSpec.m */; };
 		035A8D9A160FC4B6003E239C /* CalculatorBrain.m in Sources */ = {isa = PBXBuildFile; fileRef = 035A8D99160FC4B6003E239C /* CalculatorBrain.m */; };
 		035A8DD2160FD533003E239C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03A4AA37160FBA940093EA56 /* UIKit.framework */; };
 		035A8DD3160FD533003E239C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03A4AA39160FBA940093EA56 /* Foundation.framework */; };
@@ -30,6 +31,7 @@
 
 /* Begin PBXFileReference section */
 		032190DA160FE6D20045F85D /* libKiwi.a */ = {isa = PBXFileReference; lastKnownFileType = file; name = libKiwi.a; path = "Frameworks/Kiwi/build/Release-iphoneos/libKiwi.a"; sourceTree = "<group>"; };
+		032190E01610016F0045F85D /* CalculatorViewControllerSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalculatorViewControllerSpec.m; sourceTree = "<group>"; };
 		035A8D98160FC4B6003E239C /* CalculatorBrain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalculatorBrain.h; sourceTree = "<group>"; };
 		035A8D99160FC4B6003E239C /* CalculatorBrain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalculatorBrain.m; sourceTree = "<group>"; };
 		035A8DCF160FD533003E239C /* CalculatorTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CalculatorTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -83,6 +85,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		032190DC1610013E0045F85D /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				03A4AA52160FBA940093EA56 /* CalculatorViewController.h */,
+				03A4AA53160FBA940093EA56 /* CalculatorViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		032190DD1610014D0045F85D /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				032190E01610016F0045F85D /* CalculatorViewControllerSpec.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
 		035A8DC6160FD44D003E239C /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -95,6 +114,7 @@
 		035A8DD4160FD533003E239C /* CalculatorTests */ = {
 			isa = PBXGroup;
 			children = (
+				032190DD1610014D0045F85D /* Controllers */,
 				035A8DE3160FD7AE003E239C /* Models */,
 				035A8DDA160FD533003E239C /* CalculatorTests.h */,
 				035A8DDB160FD533003E239C /* CalculatorTests.m */,
@@ -155,12 +175,11 @@
 		03A4AA3D160FBA940093EA56 /* Calculator */ = {
 			isa = PBXGroup;
 			children = (
+				032190DC1610013E0045F85D /* Controllers */,
 				035A8DC6160FD44D003E239C /* Models */,
 				03A4AA46160FBA940093EA56 /* CalculatorAppDelegate.h */,
 				03A4AA47160FBA940093EA56 /* CalculatorAppDelegate.m */,
 				03A4AA4F160FBA940093EA56 /* MainStoryboard.storyboard */,
-				03A4AA52160FBA940093EA56 /* CalculatorViewController.h */,
-				03A4AA53160FBA940093EA56 /* CalculatorViewController.m */,
 				03A4AA3E160FBA940093EA56 /* Supporting Files */,
 			);
 			path = Calculator;
@@ -292,6 +311,7 @@
 			files = (
 				035A8DDC160FD533003E239C /* CalculatorTests.m in Sources */,
 				035A8DE5160FD7BB003E239C /* CalculatorBrainSpec.m in Sources */,
+				032190E11610016F0045F85D /* CalculatorViewControllerSpec.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
