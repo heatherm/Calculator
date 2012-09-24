@@ -27,7 +27,7 @@
     [self.operandStack addObject:[NSNumber numberWithDouble:operand]];
 }
 
--(double) popOperand
+- (double) popOperand
 {
     NSNumber *operandObject = [self.operandStack lastObject];
     if (operandObject) [self.operandStack removeLastObject];
